@@ -6,7 +6,8 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
 }
 img {
     width: 30px;
@@ -17,13 +18,16 @@ img {
 */
 
 .sidebar {
-    background-color: #037bfa;
+    background-color: rgba(25,146,212,255);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 10px 60px 10px 20px;
+}
+.sidebar img {
+    filter: brightness(0) invert(1);
 }
 .sidebar div {
     color: white;
@@ -35,7 +39,7 @@ img {
 .sidebar div div {
     display: flex; 
     gap: 10px;
-    align-items: end;
+    align-items: center;
 }
 .sidebar > div {
     display: flex;
@@ -45,9 +49,11 @@ img {
 }
 #dashboard, #main {
     margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
 }
 #main, #help {
-    font-size: 24px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -113,7 +119,7 @@ input {
     gap: 30px;
 }
 .myButton {
-	background-color:#037bfa;
+	background-color:rgba(25,146,212,255);
 	border-radius:28px;
 	border:1px solid #185dab;
 	display:inline-block;
